@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 17</title>
+        <script>
+            var rangoMenor = parseInt(prompt('Inserte el número menor de un rango numérico'));
+            var rangoMayor = parseInt(prompt('Ingrese el número mayor de un rango numérico'));
+            var numero = parseInt(prompt('Ingrese un número'));
+
+            var dif = rangoMayor - rangoMenor;
+
+            if (dif >= 5) {
+                if (numero >= rangoMenor && numero <= rangoMayor) {
+                    if (numero % 2 == 0) {
+                        document.write('<p>El numero ingresado se encuentra en el rango y también es par</p>');
+                    }
+                } else {
+                    if (numero % 2 != 0) {
+                        document.write('<p>El numero ingresado no se encuentra en el rango y también es impar</p>');
+                    }
+                }
+            } else {
+                document.write('<p>Los numeros ingresados no tienen una diferencia minima de 5 numeros enteros</p>');
+            }
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

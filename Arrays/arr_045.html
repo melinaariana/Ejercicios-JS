@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>arr_045</title>
+        <script>
+            var mix = [
+                'Ut vero.',
+                2,
+                function() {
+                    console.log('hola mundo!');
+                },
+                56,
+                'Diam rebum nonumy et.',
+                true,
+                false,
+                'Kasd stet.',
+                'Sit et dolor.',
+                null,
+                null,
+                [1, 2, 3],
+                'Dolore.'
+            ];
+            var soloStrings = mix.filter(function(string) {
+                return typeof string === 'string';
+            });
+            // codear acá la solución del ejercicio
+
+            console.log(soloStrings);
+            // deberia mostrar
+            // [ 'Ut vero.', 'Diam rebum nonumy et.', 'Kasd stet.', 'Sit et dolor.', 'Dolore.' ]
+        </script>
+    </head>
+    <body></body>
+</html>

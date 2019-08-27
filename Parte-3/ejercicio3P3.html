@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 3 Parte 3</title>
+        <script>
+            do {
+                var rangoMenor = parseFloat(prompt('Ingrese el extremo menor de un rango numérico'));
+                var rangoMayor = parseFloat(prompt('Ingrese el extremo mayor de un rango numérico'));
+                if (rangoMenor > rangoMayor) {
+                    alert('¡El rango numérico debe tener una diferencia minima de cinco números!');
+                }
+            } while (rangoMenor > rangoMayor);
+
+            do {
+                var number = parseFloat(prompt('Ingrese un número'));
+                var r = confirm('¿Desea continuar ingresando números?');
+
+                if (number > rangoMenor && number < rangoMayor) {
+                    if (number % 2 == 0) {
+                        document.write('<p>El número ingresado se encuentra dentro del rango numérico y también es par</p>');
+                    }
+                } else {
+                    if (number % 2 != 0) {
+                        document.write('<p>El número ingresado no se encuentra dentro del rango numérico y también es impar</p>');
+                    }
+                }
+            } while (r);
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>fn_010</title>
+        <script>
+            var firstName = 'Ada';
+            var lastName = 'Lovelace';
+
+            // esta funcion muestra el nombre concatenado, ya que tiene un console.log adentro
+            function mostrarNombreCompleto(firstName, lastName) {
+                return firstName + lastName;
+            } // Ada Lovelace
+
+            console.log(`${firstName} ${lastName}`);
+            // en el caso de esta funcion, como solo retorna el string concatenado, necesito poner el console.log
+            function obtenerNombreCompleto() {
+                return mostrarNombreCompleto(firstName, lastName);
+            }
+            console.log(obtenerNombreCompleto(firstName, lastName));
+        </script>
+    </head>
+    <body></body>
+</html>

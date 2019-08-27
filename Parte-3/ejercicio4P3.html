@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 4 Parte 3</title>
+        <script>
+            do {
+                var nombre = prompt('Ingrese el nombre del alumno');
+                do {
+                    var nota = parseFloat(prompt('Ingrese la nota del alumno'));
+                    if (nota < 1 || nota > 10) {
+                        alert('¡Los números ingresados son incorrectos!');
+                    }
+                } while (nota < 1 || nota > 10);
+                var r = confirm('¿Desea seguir ingresando datos?');
+                if (nota > 4) {
+                    document.write('<p>El alumno ' + nombre + ' tiene una nota superior a 4</p>');
+                } else {
+                    if (nota < 4) {
+                        document.write('<p>El alumno ' + nombre + ' tiene una nota inferior a 4</p>');
+                    } else {
+                        if (nota == 4) {
+                            document.write('<p>El alumno ' + nombre + ' tiene una nota igual a 4</p>');
+                        }
+                    }
+                }
+            } while (r);
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

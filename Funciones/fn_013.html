@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>fn_013</title>
+        <script>
+            function exclamar(str) {
+                // agregar un punto de exclamacion al principio y final del string que llega como parametro
+                // retornar el nuevo string
+                // por ejemplo: si el parametro es 'hola mundo' -> '¡hola mundo!'
+                return '¡' + str + '!';
+            }
+
+            function unirNombre(nombre, apellido) {
+                // return nombre y apellido unidos en un solo string, separados por un espacio
+                // 'Ada', 'Lovelace' -> 'Ada Lovelace'
+                return `${nombre} ${apellido}`;
+            }
+
+            function saludar(nombre) {
+                // recibimos un parametro nombre y tenemos que concatenarlo con otro string para generar el siguiente mensaje: 'Ada' -> '¡Hola Ada!'
+                // si querés, podés reutilizar la función exclamar() que creamos más arriba
+                return '¡Hola ' + nombre + '!';
+            }
+
+            console.log(exclamar('hola') === '¡hola!');
+            console.log(exclamar('hola, mundo') === '¡hola, mundo!');
+
+            console.log(unirNombre('Ada', 'Lovelace') === 'Ada Lovelace');
+            console.log(unirNombre('Grace', 'Hopper') === 'Grace Hopper');
+
+            console.log(saludar('Ada') === '¡Hola Ada!');
+            console.log(saludar('Grace') === '¡Hola Grace!');
+
+            // deberias ver en la consola todo en true
+        </script>
+    </head>
+    <body></body>
+</html>

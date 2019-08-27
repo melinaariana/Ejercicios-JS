@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 14</title>
+        <script>
+            var valorHora = parseFloat(prompt('Ingrese el valor hora'));
+            var cantidadHorasxMes = parseFloat(prompt('Ingrese el Cantidad de horas por mes'));
+            var aniosAntiguedad = parseFloat(prompt('Ingrese el cantidad de años de antiguedad'));
+            var cantSeguros = parseFloat(prompt('Ingrese el cantidad de seguros vendidos'));
+            var valorSeguroCaro = parseFloat(prompt('Ingrese el valor del seguro mas caro vendido'));
+
+            // Sueldo mensual = canthoras * valorhora
+            var sueldoMensual = valorHora * cantidadHorasxMes;
+
+            // 50% del seguro + caro vendido
+            var bonoSeguroCaro = (valorSeguroCaro * 50) / 100;
+
+            // 20% del sueldo (x cantidad de seguros vendidos)
+            var bonoSegurosVendidos = ((sueldoMensual * 20) / 100) * cantSeguros;
+
+            // 10% del sueldo por año de antiguedad
+            var bonoAniosAntiguedad = ((sueldoMensual * 10) / 100) * aniosAntiguedad;
+
+            var sueldoTotal = sueldoMensual + bonoSeguroCaro + bonoSegurosVendidos + bonoAniosAntiguedad;
+
+            var promedioHora = sueldoTotal / cantidadHorasxMes;
+
+            document.write('el sueldo total por mes es: ' + sueldoTotal);
+            document.write('el valor promedio de hors es: ' + promedioHora);
+        </script>
+
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

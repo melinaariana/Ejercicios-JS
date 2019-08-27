@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Triángulo rectángulo</title>
+        <script>
+            var cateto1 = parseInt(prompt('Ingrese el valor del primer cateto de un triángulo rectángulo'));
+            var cateto2 = parseInt(prompt('Ingrese el valor del segundo cateto de un triángulo rectángulo'));
+            var lado3 = parseInt(prompt('Ingrese el valor lado 3 de un triángulo rectángulo'));
+            var perimetro = cateto1 + cateto2 + lado3;
+            var area = (cateto1 * cateto2) / 2;
+
+            document.write('<p> El perímetro del triángulo rectángulo es: ' + perimetro + '</p>');
+            document.write('<p> El área del triángulo rectángulo es: ' + area + '</p>');
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

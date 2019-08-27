@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Ejercicio 13</title>
+        <script>
+            var sueldoBasicoMensual = parseFloat(prompt('Ingrese el valor de su sueldo básico mensual'));
+            var cantidadSegurosVendidos = parseFloat(prompt('Ingrese la cantidad de seguros vendidos en el mes'));
+            var seguroMasCaro = parseFloat(prompt('Ingrese el valor del seguro más caro vendido en el mes'));
+            // Sueldo mensual + bono por seguro mas caro + bono por seguro vendido
+            var sueldoMensualTotal = sueldoBasicoMensual + bonoCantidadSegurosVendidos + bonoSeguroMasCaro;
+
+            // 25% seguro mas caro
+            var bonoSeguroMasCaro = (seguroMasCaro * 25) / 100;
+
+            // 15% por cada seguro vendido
+            var bonoCantidadSegurosVendidos = ((sueldoBasicoMensual * 15) / 100) * cantidadSegurosVendidos;
+
+            document.write('<p> Su sueldo mensual con bonos es: ' + sueldoMensualTotal + '</p>');
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

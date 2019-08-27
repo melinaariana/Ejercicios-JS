@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 20</title>
+        <script>
+            var primerNumero = parseFloat(prompt('Ingrese el primer valor numérico'));
+            var segundoNumero = parseFloat(prompt('Ingrese el segundo valor numérico'));
+            var operador = prompt('Ingrese el operador que desee');
+
+            var resultado;
+            switch (operador) {
+                case '+':
+                    resultado = primerNumero + segundoNumero;
+                    document.write('<p>La suma entre los dos números es: ' + resultado + '</p>');
+                    break;
+
+                case '-':
+                    resultado = primerNumero - segundoNumero;
+                    document.write('<p>La resta entre los dos números es: ' + resultado + '</p>');
+                    break;
+
+                case '*':
+                    resultado = primerNumero * segundoNumero;
+                    document.write('<p>La multiplicación entre los dos números es: ' + resultado + '</p>');
+                    break;
+
+                case '/':
+                    resultado = primerNumero / segundoNumero;
+                    document.write('<p>La división entre los dos números es: ' + resultado + '</p>');
+                    break;
+
+                case '%':
+                    resultado = primerNumero % segundoNumero;
+                    document.write('<p>El resto entre los dos números es: ' + resultado + '</p>');
+            }
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

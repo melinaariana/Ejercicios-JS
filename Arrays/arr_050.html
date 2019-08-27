@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>arr_050</title>
+        <script>
+            var librosDeJS = [
+                'JavaScript for Kids: A Playful Introduction to Programming',
+                'Composing Software',
+                'Eloquent JavaScript: A Modern Introduction to Programming',
+                'JavaScript: The Good Parts',
+                'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
+                'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
+                'JavaScript: The Definitive Guide',
+                'You Don’t Know JS',
+                'JavaScript Allongé: The Six Edition'
+            ];
+            let titulos = librosDeJS.reduce(function(indice, libro) {
+                return indice + '<li>' + libro + '</li>';
+            });
+
+            console.log('<ul>' + titulos + '</ul>');
+            // codear acá la solución del ejercicio
+        </script>
+    </head>
+    <body></body>
+</html>

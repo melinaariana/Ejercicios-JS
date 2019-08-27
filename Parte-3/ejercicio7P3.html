@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 7 Parte 3</title>
+        <script>
+            do {
+                do {
+                    let primerValor = parseFloat(prompt('Ingrese un valor'));
+
+                    if (isNaN(primerValor)) {
+                        alert('El valor ingresado no corresponde a un número!');
+                    }
+                } while (isNaN(primerValor));
+
+                do {
+                    let operador = prompt('Ingrese algún operador');
+                    if (operador != '+' || operador != '-' || operador != '*' || operador != '/' || operador != '%') {
+                        alert('El operador ingresado no es correcto');
+                    }
+                } while (operador != '+' || operador != '-' || operador != '*' || operador != '/' || operador != '%');
+
+                do {
+                    let segundoValor = parseFloat(prompt('Ingrese otro valor'));
+                    if (isNaN(segundoValor)) {
+                        alert('El valor ingresado no corresponde a un número!');
+                    }
+                } while (isNaN(segundoValor));
+
+                switch (operador) {
+                    case '+':
+                        let calculo = primerValor + segundoValor;
+
+                    case '-':
+                        let calculo = primerValor - segundoValor;
+
+                    case '*':
+                        let calculo = primerValor * segundoValor;
+
+                    case '/':
+                        let calculo = primerValor / segundoValor;
+
+                    case '%':
+                        let calculo = primerValor % segundoValor;
+                }
+
+                let r = confirm('¿Desea seguir ingresando operaciones?');
+            } while (r);
+        </script>
+    </head>
+    <body></body>
+</html>

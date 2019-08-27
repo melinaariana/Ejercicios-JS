@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 19</title>
+        <script>
+            var primerNumero = parseFloat(prompt('Ingrese el primer valor numérico'));
+            var segundoNumero = parseFloat(prompt('Ingrese el segundo valor numérico'));
+            var tercerNumero = parseFloat(prompt('Ingrese el tercer valor numérico'));
+
+            var multiplicacion = primerNumero * segundoNumero * tercerNumero;
+            var suma = primerNumero + segundoNumero + tercerNumero;
+
+            if (primerNumero > segundoNumero && primerNumero < tercerNumero) {
+                document.write('<p>Los tres valores multiplicados entre si dan un resultado de: ' + multiplicacion + '</p>');
+            } else {
+                document.write('<p>El resultado de los tres valores sumados es: ' + suma + '</p>');
+                if (suma % 2 == 0) {
+                    document.write('<p> El resultado es par </p>');
+                } else {
+                    if (suma % 2 != 0) {
+                        document.write('<p> El resultado es impar </p>');
+                    }
+                }
+            }
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

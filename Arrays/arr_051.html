@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>arr_051</title>
+        <script>
+            var numeros = [5, 1, 7, 12, 5, 2, 9, 0, 11, 9, 11];
+
+            // codea debajo de este comentario la solucion al ejercicio
+            var sinRepetidos = numeros.reduce(function(acumulador, numero) {
+                if (acumulador.indexOf(numero) == -1) {
+                    acumulador.push(numero);
+                }
+                return acumulador;
+            }, []);
+
+            console.log(sinRepetidos);
+            // deberia mostrar [ 5, 1, 7, 12, 2, 9, 0, 11 ]
+        </script>
+    </head>
+    <body></body>
+</html>

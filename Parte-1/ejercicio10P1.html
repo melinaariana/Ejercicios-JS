@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Círculo</title>
+        <script>
+            var diametro = parseFloat(prompt('Ingrese el diámetro de un círculo'));
+            var perimetro = diametro * 3.14;
+            var radio = diametro / 2;
+            var area = 3.14 * (radio * radio);
+
+            document.write('<p> El perímetro del círculo es: ' + perimetro + '</p>');
+            document.write('<p> El área del círculo es: ' + area + '</p>');
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

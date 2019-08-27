@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 22</title>
+        <script>
+            var primerLado = parseFloat(prompt('Ingrese el valor del primer lado de un triángulo'));
+            var segundoLado = parseFloat(prompt('Ingrese el valor del segundo lado de un triángulo'));
+            var tercerLado = parseFloat(prompt('Ingrese el valor del tercer lado de un triángulo'));
+
+            if (primerLado == segundoLado) {
+                document.write('<p>El triángulo es equilátero</p>');
+            } else if (primerLado == tercerLado) {
+                document.write('<p>El triángulo es equilátero</p>');
+            } else {
+                if (primerLado == segundoLado) {
+                    document.write('El triángulo es isósceles');
+                } else if (primerLado == tercerLado) {
+                    document.write('El triángulo es isósceles');
+                } else if (segundoLado == tercerLado) {
+                    document.write('El triángulo es isósceles');
+                } else {
+                    document.write('El triángulo es escaleno');
+                }
+            }
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>fn_017</title>
+        <script>
+            // codear a aca abajo la solución al ejercicio
+            // CREAR calcularPromedio
+            // para la funcion calcularPromedio podés utilizar calcularSumatoria que hicimos en el ejercicio fn_016
+
+            var numeros = [7, 4, 1, 8, 9, 4, 9];
+            var calcularPromedio = function(array) {
+                var suma = numeros.reduce(function(acumulador, item) {
+                    return acumulador + item;
+                });
+                return suma / numeros.length;
+            };
+
+            console.log(calcularPromedio(numeros)); // 6
+        </script>
+    </head>
+    <body></body>
+</html>

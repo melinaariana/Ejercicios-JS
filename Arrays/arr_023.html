@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>arr_023</title>
+        <script>
+            var womenInTech = ['Ada Lovelace', 'Hedy Lamarr', 'Grace Hopper', 'Radia Perlman', 'Janie Tsao', 'Sheryl Sandberg', 'Susan Kare', 'Parisa Tabriz'];
+            var nombresSeparadosPorGuion = '';
+
+            // aca va la solucion
+            for (i = 0; i < womenInTech.length; i++) {
+                if (i < womenInTech.length - 1) {
+                    nombresSeparadosPorGuion += womenInTech[i] + ' - ';
+                } else {
+                    nombresSeparadosPorGuion += womenInTech[i];
+                }
+            }
+
+            console.log(nombresSeparadosPorGuion);
+            // deberia mostrar "Ada Lovelace - Hedy Lamarr - Grace Hopper - Radia Perlman - Janie Tsao - Sheryl Sandberg - Susan Kare - Parisa Tabriz"
+        </script>
+    </head>
+    <body></body>
+</html>

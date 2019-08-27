@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>arr_046</title>
+        <script>
+            var playlist = ['Smells Like Teen Spirit', 'Everlong', 'Come As You Are', 'The Pretender', 'Heart-Shaped Box', 'Learn to Fly', 'Lithium'];
+            var playlistEscuchada = ['The Pretender', 'Lithium', 'Come As You Are'];
+
+            /// codea aca tu solución
+            var playlistSinEscuchar = playlist.filter(function(cancion) {
+                return playlistEscuchada.indexOf(cancion) == -1;
+            });
+            console.log(playlistSinEscuchar);
+            // deberia mostrar
+            // [ 'Smells Like Teen Spirit', 'Everlong', 'Heart-Shaped Box', 'Learn to Fly' ]
+        </script>
+    </head>
+    <body></body>
+</html>

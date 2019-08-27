@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 24</title>
+        <script>
+            var categoria = prompt('Ingrese la categoría a la que pertenece');
+            var horasExtra = parseFloat(prompt('Ingrese la cantidad de horas extra realizadas en el mes'));
+            var aniosAntiguedad = parseFloat(prompt('Ingrese la cantidad de años de antiguedad en la empresa'));
+
+            // Categorías
+            var uno = 3000;
+            var dos = 4000;
+            var tres = 5000;
+            var cuatro = 6000;
+
+            // Bono antiguedad
+            var premioAntiguedad = 50;
+            var valorPremioAntiguedad = premioAntiguedad * aniosAntiguedad;
+
+            // Premio categorías
+            var premioUno = uno + 500 + valorPremioAntiguedad;
+            var premioDos = dos + valorPremioAntiguedad;
+            var premioTres = tres + 1000 + valorPremioAntiguedad;
+            var premioCuatro = cuatro + valorPremioAntiguedad;
+
+            if (categoria == 1 && horasExtra == 20) {
+                document.write('<p>El sueldo mensual con antiguedad es de: ' + premioUno + '</p>');
+            } else {
+                if (categoria == 2) {
+                    document.write('<p>El sueldo mensual con antiguedad es de ' + premioDos + '</p>');
+                } else {
+                    if (categoria == 3) {
+                        document.write('<p>El sueldo mensual con antiguedad es de ' + premioTres + '</p>');
+                    } else {
+                        if (categoria == 4) {
+                            document.write('<p> El sueldo mensual con antiguedad es de ' + premioCuatro + '</p>');
+                        }
+                    }
+                }
+            }
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

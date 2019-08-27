@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 23</title>
+        <script>
+            var valorHora = parseFloat(prompt('Ingrese el valor hora'));
+            var horasTrabajadas = parseFloat(prompt('Ingrese la cantidad de horas trabajadas en el mes'));
+            var aniosAntiguedad = parseFloat(prompt('Ingrese ingrese la cantidad de años de angiguedad'));
+
+            // Sueldo del empleado en el mes
+            var sueldoMensual = valorHora * horasTrabajadas;
+            // 10% de bono por año de antiguedad
+            var bonoAntiguedad = ((sueldoMensual * 10) / 100) * aniosAntiguedad;
+            // Si trabajó mas de 110 horas bono del 5%
+            var primerBono = (horasTrabajadas * 5) / 100;
+            // Si trabajó mas de 220 horas bono del 10%
+            var segundoBono = (horasTrabajadas * 10) / 100;
+
+            if (horasTrabajadas >= 110) {
+                document.write('<p>El sueldo a cobrar con el bono del 5% es de: ' + sueldoMensual + primerBono + '</p>');
+            } else {
+                if (horasTrabajadas >= 220) {
+                    document.write('<p>El sueldo a cobrar con el bono del 10% es de: ' + sueldoMensual + segundoBono + '</p>');
+                } else {
+                    document.write('<p>El sueldo mensual con antiguedad es de: ' + sueldoMensual + bonoAntiguedad + '</p>');
+                }
+            }
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

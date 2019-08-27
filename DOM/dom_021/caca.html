@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+        <title>Selectores</title>
+    </head>
+
+    ​
+    <body>
+        <h1>TITULO DE PRUEBA</h1>
+        <h2>ESTE TITULO NO SE VE</h2>
+        <button onclick="ocultar()">ocultar titulo 2</button>
+
+        <script>
+            var titulo = document.querySelector('h1');
+                        titulo.style.color = 'pink';
+                           titulo.style.fontWeight = 'normal';
+                           titulo.style.backgroundColor = 'black';
+                   ​
+                           function mostrar() {
+                var titulo2 = document.querySelector('h2');
+                               titulo2.style.display = 'block';
+                           }
+                   ​
+                           function ocultar() {
+                               var titulo2 = document.querySelector('h2');
+                               var button = document.querySelector('button');
+                               button.innerText = 'mostrar titulo 2';
+                               titulo2.classList.toggle('hidden');
+                           }
+        </script>
+    </body>
+    ​
+</html>

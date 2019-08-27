@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>obj_012</title>
+        <script>
+            var user = {
+                id: 123456789,
+                firstName: 'Ada',
+                lastName: 'Lovelace',
+                url: 'https://www.linkedin.com/in/ada-lovelace',
+                skills: ['HTML', 'CSS', 'SASS', 'JS']
+            };
+
+            var newUser = {
+                id: 123456789,
+                name: {
+                    first: 'Ada',
+                    last: 'Lovelance'
+                },
+                url: 'https://www.linkedin.com/in/ada-lovelace',
+                skills: ['HTML', 'CSS', 'SASS', 'JS']
+            };
+
+            // despues de la solucion
+            console.log(newUser);
+            // resultado espeardo
+            // {
+            //   id: 123456789,
+            //   name: {
+            //     first: 'Ada',
+            //     last: 'Lovelace'
+            //   },
+            //   url: 'https://www.linkedin.com/in/ada-lovelace',
+            //   skills: [ 'HTML', 'CSS', 'SASS', 'JS' ]
+            // }
+        </script>
+    </head>
+    <body></body>
+</html>

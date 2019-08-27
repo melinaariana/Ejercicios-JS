@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>fn_009</title>
+        <script>
+            // codear a aca abajo la solución al ejercicio
+            // crear ambas funciones según el enunciado
+            function obtenerIDUsuario() {
+                return 50;
+            }
+            var elUsuarioEsValido = usuarioValido();
+
+            function usuarioValido() {
+                var idUsuario = obtenerIDUsuario();
+                if (idUsuario() > 30) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+            usuarioValido(elUsuarioEsValido);
+            if (elUsuarioEsValido) {
+                console.log('El usuario es válido');
+            } else {
+                console.log('El usuario no es válido');
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

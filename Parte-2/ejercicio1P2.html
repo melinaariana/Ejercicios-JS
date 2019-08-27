@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Ejercicio 11</title>
+        <script>
+            var valorHora = parseFloat(prompt('Ingrese el valor de la hora para el calculo de su sueldo'));
+            var cantidadHoras = parseFloat(prompt('Ingrese la cantidad de horas trabajadas por día'));
+            var sueldoMensual = valorHora * cantidadHoras * 30;
+            var sueldoAnual = sueldoMensual * 12;
+
+            document.write('<p> Sueldo mensual: ' + sueldoMensual + '</p>');
+            document.write('<p> Sueldo anual: ' + sueldoAnual + '</p>');
+        </script>
+        <style>
+            p {
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                border: 2px solid skyblue;
+                background-color: rgb(199, 238, 238);
+                width: 550px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body></body>
+</html>

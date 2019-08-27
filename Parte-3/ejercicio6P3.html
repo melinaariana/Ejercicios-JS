@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS - Ejercicio 6 Parte 3</title>
+        <script>
+            do {
+                do {
+                    let horasTrabajadas = parseFloat(prompt('Ingrese la cantidad de horas trabajadas en el mes'));
+
+                    if (isNaN(horasTrabajadas)) {
+                        alert('¡El numero ingresado no corresponde a un número!');
+                    }
+                } while (isNaN(horasTrabajadas));
+
+                do {
+                    let valorHora = parseFloat(prompt('Ingrese el valor hora'));
+
+                    if (isNaN(valorHora)) {
+                        alert('¡El numero ingresado no corresponde a un número!');
+                    }
+                } while (isNaN(valorHora));
+
+                let r = confirm('¿Desea seguir ingresando datos?');
+                let sueldo = horasTrabajadas * valorHora;
+
+                document.write(
+                    '<p>La cantidad de horas que trabajó en el mes: ' +
+                        horasTrabajadas +
+                        'y el valor por cada hora trabajada: ' +
+                        valorHora +
+                        'dan un sueldo total de: ' +
+                        sueldo +
+                        '</p>'
+                );
+            } while (r);
+        </script>
+    </head>
+    <body></body>
+</html>
